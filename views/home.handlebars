@@ -1,0 +1,28 @@
+{{!-- home page --}}
+
+<!--Top navigation bar-->
+{{> articles/navbar}}
+
+<!--Site header/Jumbotron-->
+{{> articles/header-block}} 
+
+<!--Scraped articles-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 articles">
+        {{> articles/article-block saved=false}}
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+{{> articles/footer-block}} 
+
+<!--Delete article confirmation modal-->
+{{> articles/delete-confirmation-modal}}
+
+<!--New articles found modal-->
+{{> articles/articles-found-modal}}
+
+<!--Article saved success message -->
+{{> articles/save-article-message}}

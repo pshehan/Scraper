@@ -1,0 +1,29 @@
+{{!-- aved articles page --}}
+
+<!--Top navigation bar-->
+{{> articles/navbar}}
+
+<!--Site header/Jumbotron-->
+{{> articles/header-saved}} 
+
+<!--Scraped articles go here-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Saved articles</h2>
+
+            {{> articles/article-saved saved=true}}
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+{{> articles/footer-block}} 
+
+<!--Confirmation modal that displays when a user is about to remove an article from the saved articles list.-->
+{{> articles/remove-save-article-message}}
+
+<!--Modal for entering article comments/notes-->
+{{> articles/comments-modal}}
+
+{{> articles/delete-comment-confirmation-modal}}

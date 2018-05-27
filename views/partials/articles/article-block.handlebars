@@ -1,0 +1,14 @@
+<!--Scraped -->
+{{#each articles}}
+    <div class="card mt-5 article-card">
+        <div class="card-body">
+            <h5 class="card-title article-title">{{this.title}}</h5>
+            <img class="img-fluid article-img" src="{{this.img}}">
+            <br>
+            <a href='{{this.link}}' target="_blank"><button class="btn btn-primary btn-dark mt-4">Continue reading</button></a>
+            <button class="btn btn-dark ml-3 mt-4 save-article-btn" data-id="{{this._id}}">Save article</button>
+            <button class="btn btn-dark ml-3 mt-4 delete-article-btn" data-id="{{this._id}}">Delete article</button>
+        </div>
+    </div>
+{{/each}}
+
