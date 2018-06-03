@@ -39,7 +39,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/skrape";
 
 // Database configuration
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+mongoose.connect("mongodb://heroku_gcfr9nvt:13m5rqkr9blr4u5mchkm77thka@ds245240.mlab.com:45240/heroku_gcfr9nvt");
 var db = mongoose.connection;
 
 //error message
@@ -245,3 +245,6 @@ app.delete("/notes/delete/:note_id/:article_id", function(req, res) {
 app.listen(port, function() {
   console.log("App running on port " + port);
 });
+
+
+
