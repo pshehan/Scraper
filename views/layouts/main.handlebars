@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>NBA Playoff Central</title>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+        <title>NBA Finals Central!</title>
+    </head>
+    <body>
+  
 
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!--External CSS-->
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-	
-  	<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</head>
-	<body>
-		{{{ body }}}
 
-		<!--External Javascript-->
-		<script src="/assets/app.js"></script>
-	</body>
+
+
+
+<div class="jumbotron text-center bg-success text-white">
+    <h1 class="display-4" id="app-title">NBA Playoff Central</h1>
+    <section id="dark">
+    <h5 id="subhead">Who will bring home the trophy? Keep up to date with the NBA Finals.</h5>
+    <button class="button" id="scrape"><span>Scrape</span></button></a>
+    <a href="saved"><button class="button" id="saved-articles"><span>Saved</span></button></a>
+</section>
+</div>
+
+
+
+
+    {{{ body }}}
+
+        <!--External JS Link-->
+        <script src="/assets/js/app.js"></script>
+    </body>
 </html>

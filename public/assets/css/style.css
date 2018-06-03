@@ -1,47 +1,63 @@
-/* Color of article summary*/
-.card-text {
-    color: black !important;
-}
-
-/* Color of article title*/
-.card-title {
-    color: white !important;
-}
-
-/*Width of each article image*/
-.article-img{
-    max-width: 320px;
-}
-
-/* font size of article summaries*/
-.article-summary {
-    font-size: 18px;
-}
-
-/*Jumbotron background image*/
 .jumbotron {
     background-image: url("/assets/images/background.jpg");
     background-repeat: no repeat;
     background-size: cover;
+    height: 500px;
 }
 
-/* Modal text size*/
-#number-articles-found, .comment-section-text {
-    font-size: 18px;
-}
-
-/*Color of article cards that are not "saved articles"*/
-.article-card, .social-btn {
-    background-color: #00bade;
-}
-
-/*Add a top and bottom border around each user comment*/
-.user-note-div {
-    border-bottom: 3px solid white; margin-top:20px;
-    border-top: 3px solid white; 
-}
-
-/*title in Jumbotron*/
 #app-title {
     font-size: 75px;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+
+
+#subhead {
+    font-size: 30px;
+    color:#FF8C00;	
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+
+
+.button {
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

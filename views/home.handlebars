@@ -1,28 +1,23 @@
-{{!-- home page --}}
-
-<!--Top navigation bar-->
-{{> articles/navbar}}
-
-<!--Site header/Jumbotron-->
-{{> articles/header-block}} 
-
-<!--Scraped articles-->
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 articles">
-        {{> articles/article-block saved=false}}
+<div class="col-md-12">
+    {{#if article}} {{#each article}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>{{this.title}}</h4>
+        </div>
+        <div class="panel-body">
+            <a href={{this.link}} target="_blank">{{this.link}}</a>
+            <br>
+            <br>
+            <button type="button" class="btn btn-danger save" data-id={{this._id}}>Save Article</button>
         </div>
     </div>
+    {{/each}} {{else}}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>No new articles.</h4>
+        </div>
+    </div>
+    {{/if}}
 </div>
-
-<!--Footer-->
-{{> articles/footer-block}} 
-
-<!--Delete article confirmation modal-->
-{{> articles/delete-confirmation-modal}}
-
-<!--New articles found modal-->
-{{> articles/articles-found-modal}}
-
-<!--Article saved success message -->
-{{> articles/save-article-message}}
+</div>
